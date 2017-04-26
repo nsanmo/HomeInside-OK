@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rodrigo.sdm.com.homeinside.TemperaturaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleActivity"
+        android:textSize="30dp"
+        android:text="Control de Temperatura"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark" />
+
+    <!--RecyclerView Lista de vistas de Cardview, necesita
+    que se cree un Adapter y un ViewHolder-->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/reciclerView"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleActivity"
+        android:layout_marginTop="10dp"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

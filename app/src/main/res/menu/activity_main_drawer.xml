@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_general"
+            android:icon="@drawable/home"
+            android:title="@string/scroll_general" />
+        <item
+            android:id="@+id/nav_iluminacion"
+            android:icon="@drawable/bombilla"
+            android:title="@string/scroll_ilum" />
+        <item
+            android:id="@+id/nav_tempertura"
+            android:icon="@drawable/temperatura"
+            android:title="@string/scroll_temp" />
+        <item
+            android:id="@+id/nav_pers"
+            android:icon="@drawable/persianas"
+            android:title="@string/scroll_pers" />
+        <item
+            android:id="@+id/nav_jardin"
+            android:icon="@drawable/jardin"
+            android:title="@string/scroll_jardin" />
+        <item
+            android:id="@+id/nav_meteo"
+            android:icon="@drawable/meteo"
+            android:title="@string/scroll_meteo" />
+        <item
+            android:id="@+id/nav_eventos"
+            android:icon="@drawable/eventos"
+            android:title="@string/scroll_eventos" />
+    </group>
+
+    <item android:title="@string/scroll_otros">
+        <menu>
+            <item
+                android:id="@+id/nav_tools"
+                android:icon="@drawable/config"
+                android:title="@string/scroll_tools" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="@string/scroll_about" />
+
+        </menu>
+    </item>
+
+</menu>

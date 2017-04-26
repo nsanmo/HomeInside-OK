@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    tools:context="rodrigo.sdm.com.homeinside.PPersianaActivity"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+        <TableRow
+            android:background="@drawable/meteo2"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#00516C"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Climatología"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:id="@+id/p_salon"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#00516C"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Temperatura"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_temp"
+                        android:textColor="#00516C"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiana" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:id="@+id/p_cocina"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#00516C"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Humedad"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_hume"
+                        android:textColor="#00516C"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiana " />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_p_habitacion1"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#00516C"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Viento"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_wind"
+                        android:textColor="#00516C"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiana " />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_habitacion1"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#00516C"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Precipitaciones"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_preci"
+                        android:textColor="#00516C"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiana " />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</ScrollView>

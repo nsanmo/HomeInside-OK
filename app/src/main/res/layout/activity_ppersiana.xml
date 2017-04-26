@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    tools:context="rodrigo.sdm.com.homeinside.PPersianaActivity"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+        <TableRow
+            android:background="@drawable/persiana"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#00516C"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Persianas"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:id="@+id/p_salon"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#00516C"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/habitacion_salon"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="63dp">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/pSalontv"
+                        android:textColor="#00516C"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiana" />
+
+                    <ImageView
+                        android:id="@+id/pbajasalon"
+                        android:onClick="onClickPersiana"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@drawable/bajapersiana"
+                        />
+
+                    <ImageView
+                        android:onClick="onClickPersiana"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/subepersiana"
+                        android:id="@+id/psubesalon" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:id="@+id/p_cocina"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#00516C"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Cocina"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="63dp">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/p_inner_cocina"
+                        android:textColor="#00516C"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiana " />
+
+                    <ImageView
+                        android:id="@+id/pbajaCocina"
+                        android:onClick="onClickPersiana"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@drawable/bajapersiana"
+                        />
+
+                    <ImageView
+                        android:onClick="onClickPersiana"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/subepersiana"
+                        android:id="@+id/psubeCocina" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_p_habitacion1"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#00516C"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Habitación"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="63dp">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_p_inner_habitacion1"
+                        android:textColor="#00516C"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiana " />
+
+                    <ImageView
+                        android:id="@+id/pbajaHabitacion"
+                        android:onClick="onClickPersiana"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@drawable/bajapersiana"
+                        />
+
+                    <ImageView
+                        android:onClick="onClickPersiana"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/subepersiana"
+                        android:id="@+id/psubeHabitacion" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_habitacion1"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#00516C"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Habitación Invitados"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="63dp">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/textView1"
+                        android:textColor="#00516C"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiana " />
+
+                    <ImageView
+                        android:id="@+id/psubeInvitados"
+                        android:onClick="onClickPersiana"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@drawable/bajapersiana"
+                        />
+
+                    <ImageView
+                        android:onClick="onClickPersiana"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/subepersiana"
+                        android:id="@+id/pbajaInvitados" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent"></LinearLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</ScrollView>

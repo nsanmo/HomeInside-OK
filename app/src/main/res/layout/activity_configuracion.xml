@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context="rodrigo.sdm.com.homeinside.ConfiguracionActivity"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:stretchColumns="*">
+            <TableRow
+                android:background="@drawable/configuracionfondo"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#00516C"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:text="@string/scroll_tools"/>
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/login"
+                        android:textSize="17dp"
+                        android:textColor="#00516C"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/usuario"
+                            android:textColor="#00516C"
+                            android:layout_weight="1.3"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:hint="@string/hintUsuario"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.7"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.3"
+                            android:textColor="#00516C"
+                            android:text="@string/password" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:textAlignment="center"
+                            android:hint="@string/hintPassword"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+</TableLayout>
+</ScrollView>
